@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entropy.Template", "Entropy.AIO\Entropy.Template.csproj", "{38FF6EFF-6A94-407E-9053-91930508569D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38FF6EFF-6A94-407E-9053-91930508569D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FF6EFF-6A94-407E-9053-91930508569D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FF6EFF-6A94-407E-9053-91930508569D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FF6EFF-6A94-407E-9053-91930508569D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42AB8069-F12B-477E-A8DA-E9779FDB7548}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38FF6EFF-6A94-407E-9053-91930508569D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Entropy.AIO</RootNamespace>
+    <AssemblyName>Entropy.AIO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Build\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Entropy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=82986faa26f76839, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\ETY\SYSTEM\Entropy.dll</HintPath>
+    </Reference>
+    <Reference Include="Entropy.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea59f69f261dfc3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\ETY\SYSTEM\Entropy.Sandbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Entropy.SDK, Version=1.2.7071.40716, Culture=neutral, PublicKeyToken=a9dd01c7a904d443, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\ETY\SYSTEM\Entropy.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Entropy.ToolKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d596fac04eee0607, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\ETY\SYSTEM\Entropy.ToolKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ETY\SYSTEM\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.0.1.0, Culture=neutral, PublicKeyToken=74e2d0cc1937c2ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ETY\SYSTEM\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=4.0.1.0, Culture=neutral, PublicKeyToken=74e2d0cc1937c2ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ETY\SYSTEM\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=4.0.1.0, Culture=neutral, PublicKeyToken=74e2d0cc1937c2ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ETY\SYSTEM\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput, Version=4.0.1.0, Culture=neutral, PublicKeyToken=74e2d0cc1937c2ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ETY\SYSTEM\SharpDX.XInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bases\Components.cs" />
+    <Compile Include="Bootstrap.cs" />
+    <Compile Include="Bases\ChampionBase.cs" />
+    <Compile Include="Champions\Annie\Annie.cs" />
+    <Compile Include="Champions\Annie\Components.cs" />
+    <Compile Include="Champions\Annie\Drawings.cs" />
+    <Compile Include="Champions\Annie\Logics\Burst.cs" />
+    <Compile Include="Champions\Annie\Logics\Combo.cs" />
+    <Compile Include="Champions\Annie\Logics\GapCloser.cs" />
+    <Compile Include="Champions\Annie\Logics\Harass.cs" />
+    <Compile Include="Champions\Annie\Logics\InterrupterEvent.cs" />
+    <Compile Include="Champions\Annie\Logics\JungleClear.cs" />
+    <Compile Include="Champions\Annie\Logics\Killsteal.cs" />
+    <Compile Include="Champions\Annie\Logics\LaneClear.cs" />
+    <Compile Include="Champions\Annie\Logics\LastHit.cs" />
+    <Compile Include="Champions\Annie\Menus.cs" />
+    <Compile Include="Champions\Annie\Methods.cs" />
+    <Compile Include="Champions\Annie\Misc\Damage.cs" />
+    <Compile Include="Champions\Annie\Misc\Definitions.cs" />
+    <Compile Include="Champions\Annie\Spells.cs" />
+    <Compile Include="Champions\Ashe\Ashe.cs" />
+    <Compile Include="Champions\Ashe\Components.cs" />
+    <Compile Include="Champions\Ashe\Drawings.cs" />
+    <Compile Include="Champions\Ashe\Logics\AntiGapcloser.cs" />
+    <Compile Include="Champions\Ashe\Logics\Automatic.cs" />
+    <Compile Include="Champions\Ashe\Logics\Combo.cs" />
+    <Compile Include="Champions\Ashe\Logics\Harass.cs" />
+    <Compile Include="Champions\Ashe\Logics\Interrupter.cs" />
+    <Compile Include="Champions\Ashe\Logics\JungleClear.cs" />
+    <Compile Include="Champions\Ashe\Logics\Killsteal.cs" />
+    <Compile Include="Champions\Ashe\Logics\LaneClear.cs" />
+    <Compile Include="Champions\Ashe\Logics\LastHit.cs" />
+    <Compile Include="Champions\Ashe\Menus.cs" />
+    <Compile Include="Champions\Ashe\Methods.cs" />
+    <Compile Include="Champions\Ashe\Misc\Damage.cs" />
+    <Compile Include="Champions\Ashe\Misc\Definitions.cs" />
+    <Compile Include="Champions\Ashe\Spells.cs" />
+    <Compile Include="Champions\Xerath\Components.cs" />
+    <Compile Include="Champions\Xerath\Drawings.cs" />
+    <Compile Include="Champions\Xerath\Logics\AntiGapcloser.cs" />
+    <Compile Include="Champions\Xerath\Logics\Automatic.cs" />
+    <Compile Include="Champions\Xerath\Logics\Combo.cs" />
+    <Compile Include="Champions\Xerath\Logics\Harass.cs" />
+    <Compile Include="Champions\Xerath\Logics\Interrupter.cs" />
+    <Compile Include="Champions\Xerath\Logics\Jungleclear.cs" />
+    <Compile Include="Champions\Xerath\Logics\Killsteal.cs" />
+    <Compile Include="Champions\Xerath\Logics\Laneclear.cs" />
+    <Compile Include="Champions\Xerath\Menus.cs" />
+    <Compile Include="Champions\Xerath\Methods.cs" />
+    <Compile Include="Champions\Xerath\Misc\Damage.cs" />
+    <Compile Include="Champions\Xerath\Misc\Definitions.cs" />
+    <Compile Include="Champions\Xerath\Spells.cs" />
+    <Compile Include="Champions\Xerath\Xerath.cs" />
+    <Compile Include="Champions\_Template\Components.cs" />
+    <Compile Include="Champions\_Template\Drawings.cs" />
+    <Compile Include="Champions\_Template\Logics\Combo.cs" />
+    <Compile Include="Champions\_Template\Logics\Harass.cs" />
+    <Compile Include="Champions\_Template\Logics\JungleClear.cs" />
+    <Compile Include="Champions\_Template\Logics\Killsteal.cs" />
+    <Compile Include="Champions\_Template\Logics\LaneClear.cs" />
+    <Compile Include="Champions\_Template\Logics\LastHit.cs" />
+    <Compile Include="Champions\_Template\Menus.cs" />
+    <Compile Include="Champions\_Template\Methods.cs" />
+    <Compile Include="Champions\_Template\Misc\Damage.cs" />
+    <Compile Include="Champions\_Template\Spells.cs" />
+    <Compile Include="Champions\_Template\Template.cs" />
+    <Compile Include="General\Optimizations.cs" />
+    <Compile Include="Enumerations\Enumerations.cs" />
+    <Compile Include="Bases\DrawingBase.cs" />
+    <Compile Include="Bases\LogicBase.cs" />
+    <Compile Include="Bases\MenuBase.cs" />
+    <Compile Include="General\ChampionLoader.cs" />
+    <Compile Include="General\ColorScheme.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Extensions.cs" />
+    <Compile Include="Utility\ManaManager.cs" />
+    <Compile Include="Utility\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

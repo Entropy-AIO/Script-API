@@ -1,0 +1,3065 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "Entropy"
+    </assembly>
+    <members>
+        <member name="M:Entropy.TacticalMap.WorldToMinimap(SharpDX.Vector3)">
+            <summary>
+Worlds to minimap.
+</summary>
+            <param name="world">The world.</param>
+            <returns />
+        </member>
+        <member name="T:Entropy.TacticalMap">
+            <summary>
+This class contains fields and methods of the game's minimap
+</summary>
+        </member>
+        <member name="E:Entropy.AudioManager.OnPlaySound">
+            <summary>
+This event is fired when a sound is played
+</summary>
+        </member>
+        <member name="T:Entropy.AudioManager">
+            <summary>
+This class is used for audio events and functions
+</summary>
+        </member>
+        <member name="P:Entropy.HeroExperience.Owner">
+            <summary>
+Gets the owner.
+</summary>
+            <value>
+The owner.
+</value>
+        </member>
+        <member name="P:Entropy.HeroExperience.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.HeroExperience.LevelRef">
+            <summary>
+Gets the level reference.
+</summary>
+            <value>
+The level reference.
+</value>
+        </member>
+        <member name="P:Entropy.HeroExperience.SpellTrainingPoints">
+            <summary>
+Gets the spell training points.
+</summary>
+            <value>
+The spell training points.
+</value>
+        </member>
+        <member name="P:Entropy.HeroExperience.Exp">
+            <summary>
+Gets the experience.
+</summary>
+            <value>
+The experience.
+</value>
+        </member>
+        <member name="P:Entropy.HeroExperience.LevelCap">
+            <summary>
+Gets the level cap.
+</summary>
+            <value>
+The level cap.
+</value>
+        </member>
+        <member name="T:Entropy.HeroExperience">
+            <summary>
+This class contains fields regarding <see cref="T:Entropy.AIHeroClient" />'s experience
+</summary>
+        </member>
+        <member name="P:Entropy.CameraConfig.ZoomStepSmoothIntensity">
+            <summary>
+Gets or sets the zoom step smooth intensity.
+</summary>
+            <value>
+The zoom step smooth intensity.
+</value>
+        </member>
+        <member name="P:Entropy.CameraConfig.Zoom">
+            <summary>
+Gets or sets the zoom.
+</summary>
+            <value>
+The zoom.
+</value>
+        </member>
+        <member name="P:Entropy.CameraConfig.MaxZoom">
+            <summary>
+Gets or sets the maximum zoom.
+</summary>
+            <value>
+The maximum zoom.
+</value>
+        </member>
+        <member name="P:Entropy.CameraConfig.MinZoom">
+            <summary>
+Gets or sets the minimum zoom.
+</summary>
+            <value>
+The minimum zoom.
+</value>
+        </member>
+        <member name="T:Entropy.CameraConfig">
+            <summary>
+This class is used for managing camera view settings
+</summary>
+        </member>
+        <member name="P:Entropy.GameConsole.IsOpen">
+            <summary>
+Gets a value indicating whether this instance is open.
+</summary>
+            <value>
+                <c>true</c> if this instance is open; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.GameConsole.IsDragged">
+            <summary>
+Gets a value indicating whether this instance is dragged.
+</summary>
+            <value>
+                <c>true</c> if this instance is dragged; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.GameConsole.PositionY">
+            <summary>
+Gets the y position.
+</summary>
+            <value>
+The y position.
+</value>
+        </member>
+        <member name="P:Entropy.GameConsole.PositionX">
+            <summary>
+Gets the x position.
+</summary>
+            <value>
+The x position.
+</value>
+        </member>
+        <member name="M:Entropy.GameConsole.Print(System.String)">
+            <summary>
+Prints the specified message.
+</summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Entropy.GameConsole.Send(System.String)">
+            <summary>
+Sends the specified message.
+</summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="E:Entropy.GameConsole.OnProcessMessage">
+            <summary>
+This event is fired when the chat processes a message for display
+</summary>
+        </member>
+        <member name="E:Entropy.GameConsole.OnInput">
+            <summary>
+This event is fired when the user inputs a message
+</summary>
+        </member>
+        <member name="T:Entropy.GameConsole">
+            <summary>
+This class contains methods and fields regarding the ingame chat
+</summary>
+        </member>
+        <member name="P:Entropy.Perk.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="T:Entropy.Perk">
+            <summary>
+This class is used for instances of perks
+</summary>
+        </member>
+        <member name="P:Entropy.Hud.LastTarget">
+            <summary>
+Gets the last target.
+</summary>
+            <value>
+The last target.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.HoveredObject">
+            <summary>
+Gets the hovered object.
+</summary>
+            <value>
+The hovered object.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.CursorMoveToObject">
+            <summary>
+Gets the cursor move to object.
+</summary>
+            <value>
+The cursor move to object.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.CursorPositionClipped">
+            <summary>
+Gets the cursor position.
+</summary>
+            <value>
+The cursor position.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.LastWaypoint">
+            <summary>
+Gets the last waypoint position.
+</summary>
+            <value>
+The last waypoint position.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.CursorCastObject">
+            <summary>
+Gets the cursor cast object.
+</summary>
+            <value>
+The cursor cast object.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.CursorPositionUnclipped">
+            <summary>
+Gets the alternative cursor position.
+</summary>
+            <value>
+The alternative cursor position.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.CursorMoveToRedObject">
+            <summary>
+Gets the cursor move to red object.
+</summary>
+            <value>
+The cursor move to red object.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.SpacebarGodrayObject">
+            <summary>
+Gets the spacebar godray object.
+</summary>
+            <value>
+The spacebar godray object.
+</value>
+        </member>
+        <member name="P:Entropy.Hud.IsWindowFocused">
+            <summary>
+Gets a value indicating whether this instance is window focused.
+</summary>
+            <value>
+                <c>true</c> if this instance is window focused; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="E:Entropy.Hud.OnSendClick">
+            <summary>
+This event is fired when the user sends a click
+</summary>
+        </member>
+        <member name="T:Entropy.Hud">
+            <summary>
+This class contains fields and methods related to the hud and user interface
+</summary>
+        </member>
+        <member name="P:Entropy.SpellDataInst.Owner">
+            <summary>
+Gets the owner.
+</summary>
+            <value>
+The owner.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.SpellDataInst.Slot">
+            <summary>
+Gets the slot.
+</summary>
+            <value>
+The slot.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.SpellData">
+            <summary>
+Gets the spell data.
+</summary>
+            <value>
+The spell data.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.Ammo">
+            <summary>
+Gets the ammo.
+</summary>
+            <value>
+The ammo.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.AmmoRechargeStart">
+            <summary>
+Gets the ammo recharge start.
+</summary>
+            <value>
+The ammo recharge start.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.ToggleState">
+            <summary>
+Gets the toggle state.
+</summary>
+            <value>
+The toggle state.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.Level">
+            <summary>
+Gets the level.
+</summary>
+            <value>
+The level.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.CooldownExpires">
+            <summary>
+Gets the cooldown expires.
+</summary>
+            <value>
+The cooldown expires.
+</value>
+        </member>
+        <member name="P:Entropy.SpellDataInst.Cooldown">
+            <summary>
+Gets the cooldown.
+</summary>
+            <value>
+The cooldown.
+</value>
+        </member>
+        <member name="T:Entropy.SpellDataInst">
+            <summary>
+This class contains fields of a real-time instance of a spell
+</summary>
+        </member>
+        <member name="P:Entropy.LocalPlayer.Instance">
+            <summary>
+Gets the player instance.
+</summary>
+            <value>
+The player instance.
+</value>
+        </member>
+        <member name="M:Entropy.LocalPlayer.SendEmote(Entropy.Emote)">
+            <summary>
+Sends the specified emote.
+</summary>
+            <param name="emote">The emote.</param>
+        </member>
+        <member name="M:Entropy.LocalPlayer.SendMasteryEmote(System.Boolean)">
+            <summary>
+Sends the mastery emote.
+</summary>
+        </member>
+        <member name="M:Entropy.LocalPlayer.IssueOrder(Entropy.HeroOrder,Entropy.AttackableUnit)">
+            <summary>
+Issues the specified order.
+</summary>
+            <param name="order">The order.</param>
+            <param name="target">The target.</param>
+            <returns>
+                <c>true</c> on success, <c>false</c> on failiure.</returns>
+        </member>
+        <member name="M:Entropy.LocalPlayer.IssueOrder(Entropy.HeroOrder,SharpDX.Vector3)">
+            <summary>
+Issues the specified order.
+</summary>
+            <param name="order">The order.</param>
+            <param name="position">The position.</param>
+            <returns>
+                <c>true</c> on success, <c>false</c> on failiure.</returns>
+        </member>
+        <member name="E:Entropy.LocalPlayer.OnAfk">
+            <summary>
+This event is fired right before the player disconnects from being AFK
+</summary>
+        </member>
+        <member name="E:Entropy.LocalPlayer.OnIssueOrder">
+            <summary>
+This event is fired when an order is issued
+</summary>
+        </member>
+        <member name="E:Entropy.LocalPlayer.OnSendEmote">
+            <summary>
+This event is fired when an order is issued
+</summary>
+        </member>
+        <member name="E:Entropy.LocalPlayer.OnSendMasteryEmote">
+            <summary>
+This event is fired when the player sends a mastery emote
+</summary>
+        </member>
+        <member name="T:Entropy.LocalPlayer">
+            <summary>
+This class contains methods, fields and events specific to the local player
+</summary>
+        </member>
+        <member name="P:Entropy.Game.IsCustom">
+            <summary>
+Gets a value indicating whether this instance is custom.
+</summary>
+            <value>
+                <c>true</c> if this instance is custom; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.Game.ScreenCursorPos">
+            <summary>
+Gets the screen cursor position.
+</summary>
+            <value>
+The screen cursor position.
+</value>
+        </member>
+        <member name="P:Entropy.Game.TickCount">
+            <summary>
+Gets the tick count.
+</summary>
+            <value>
+The tick count.
+</value>
+        </member>
+        <member name="P:Entropy.Game.Map">
+            <summary>
+Gets the map.
+</summary>
+            <value>
+The map.
+</value>
+        </member>
+        <member name="P:Entropy.Game.Mode">
+            <summary>
+Gets the game mode.
+</summary>
+            <value>
+The game mode.
+</value>
+        </member>
+        <member name="P:Entropy.Game.MapName">
+            <summary>
+Gets the name of the map.
+</summary>
+            <value>
+The name of the map.
+</value>
+        </member>
+        <member name="P:Entropy.Game.Type">
+            <summary>
+Gets the game type.
+</summary>
+            <value>
+The game type.
+</value>
+        </member>
+        <member name="P:Entropy.Game.Region">
+            <summary>
+Gets the region waypoint.
+</summary>
+            <value>
+The region waypoint.
+</value>
+        </member>
+        <member name="P:Entropy.Game.ClockTime">
+            <summary>
+Gets the clock time.
+</summary>
+            <value>
+The clock time.
+</value>
+        </member>
+        <member name="P:Entropy.Game.State">
+            <summary>
+Gets the current game state.
+</summary>
+            <value>
+The current game state.
+</value>
+        </member>
+        <member name="M:Entropy.Game.SendPing(SharpDX.Vector3,&lt;unknown type&gt;)">
+            <summary>
+Sends the ping to the server.
+</summary>
+            <param name="pos">The position.</param>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Entropy.Game.SendPing(Entropy.AttackableUnit,&lt;unknown type&gt;)">
+            <summary>
+Sends the ping to the server.
+</summary>
+            <param name="target">The target.</param>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Entropy.Game.ShowPing(Entropy.AttackableUnit,&lt;unknown type&gt;,System.Boolean)">
+            <summary>
+Shows the ping in the client without sending it.
+</summary>
+            <param name="target">The target.</param>
+            <param name="type">The type.</param>
+            <param name="playSound">if set to <c>true</c> [play sound].</param>
+        </member>
+        <member name="M:Entropy.Game.ShowPing(SharpDX.Vector3,&lt;unknown type&gt;,System.Boolean)">
+            <summary>
+Shows the ping in the client without sending it.
+</summary>
+            <param name="pos">The position.</param>
+            <param name="type">The type.</param>
+            <param name="playSound">if set to <c>true</c> [play sound].</param>
+        </member>
+        <member name="E:Entropy.Game.OnLoad">
+            <summary>
+This event is fired when the game loads (right before the loading screen ends)
+</summary>
+        </member>
+        <member name="E:Entropy.Game.OnEnd">
+            <summary>
+This event is fired when the game ends
+</summary>
+        </member>
+        <member name="E:Entropy.Game.OnWndProc">
+            <summary>
+This event is fired when the game recieves an input message
+</summary>
+        </member>
+        <member name="E:Entropy.Game.OnBugsplat">
+            <summary>
+This event is fired right before the game bugsplats
+</summary>
+        </member>
+        <member name="E:Entropy.Game.OnShowPing">
+            <summary>
+This event is fired when a ping is shown on the client
+</summary>
+        </member>
+        <member name="E:Entropy.Game.OnSendPing">
+            <summary>
+This event is fired when a ping is sent to the server
+</summary>
+        </member>
+        <member name="E:Entropy.Game.OnUpdate">
+            <summary>
+This event is fired when the game updates itself
+</summary>
+        </member>
+        <member name="E:Entropy.Game.OnNotify">
+            <summary>
+This event is fired when the game fires a game-related event
+</summary>
+        </member>
+        <member name="T:Entropy.Game">
+            <summary>
+This class contains functions, fields and events related to the game
+</summary>
+        </member>
+        <member name="P:Entropy.Hacks.AntiAFK">
+            <summary>
+Gets or sets a value indicating whether [anti afk enabled].
+</summary>
+            <value>
+                <c>true</c> if [anti afk enabled]; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.Hacks.DisableDrawings">
+            <summary>
+Gets or sets the disable drawings type flags.
+</summary>
+            <value>
+The disable drawings type flags.
+</value>
+        </member>
+        <member name="P:Entropy.Hacks.TurretRangeIndicators">
+            <summary>
+Gets or sets the turret range indicator hack type.
+</summary>
+            <value>
+The turret range indicator hack type.
+</value>
+        </member>
+        <member name="T:Entropy.Hacks">
+            <summary>
+This class contains fields of hacks that can be used in the game
+</summary>
+        </member>
+        <member name="P:Entropy.EnetClient.LocalIP">
+            <summary>
+Gets the local ip.
+</summary>
+            <value>
+The local ip.
+</value>
+        </member>
+        <member name="E:Entropy.EnetClient.OnProcessPacket">
+            <summary>
+This event if fired when a server-to-client packet is processed
+</summary>
+        </member>
+        <member name="T:Entropy.EnetClient">
+            <summary>
+This class contains fields, methods and events relevant to the game's networking and enet systems
+</summary>
+        </member>
+        <member name="P:Entropy.Spellbook.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.Spellbook.ReplicatedSpellCanCastBitsLower1">
+            <summary>
+Gets the replicated spell can cast bits lower1.
+</summary>
+            <value>
+The replicated spell can cast bits lower1.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.ReplicatedSecondWordSpellCanCastBitsLower1">
+            <summary>
+Gets the replicated second word spell can cast bits lower1.
+</summary>
+            <value>
+The replicated second word spell can cast bits lower1.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.ReplicatedSpellCanCastBitsUpper1">
+            <summary>
+Gets the replicated spell can cast bits upper1.
+</summary>
+            <value>
+The replicated spell can cast bits upper1.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.Owner">
+            <summary>
+Gets the owner.
+</summary>
+            <value>
+The owner.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.CastEndTime">
+            <summary>
+Gets the cast time.
+</summary>
+            <value>
+The cast time.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.SpellWasCast">
+            <summary>
+Gets a value indicating whether [spell was cast].
+</summary>
+            <value>
+                <c>true</c> if [spell was cast]; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.IsStopped">
+            <summary>
+Gets a value indicating whether this instance is stopped.
+</summary>
+            <value>
+                <c>true</c> if this instance is stopped; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.IsCastingSpell">
+            <summary>
+Gets a value indicating whether this instance is casting.
+</summary>
+            <value>
+                <c>true</c> if this instance is charging; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.IsCharging">
+            <summary>
+Gets a value indicating whether this instance is charging.
+</summary>
+            <value>
+                <c>true</c> if this instance is charging; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.IsChanneling">
+            <summary>
+Gets a value indicating whether this instance is channeling.
+</summary>
+            <value>
+                <c>true</c> if this instance is channeling; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.Spellbook.IsAutoAttacking">
+            <summary>
+Gets a value indicating whether this instance is automatic attacking.
+</summary>
+            <value>
+                <c>true</c> if this instance is automatic attacking; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="M:Entropy.Spellbook.GetSpell(Entropy.SpellSlot)">
+            <summary>
+Gets the spell.
+</summary>
+            <param name="slot">The slot.</param>
+            <returns />
+        </member>
+        <member name="M:Entropy.Spellbook.GetSpellState(Entropy.SpellSlot)">
+            <summary>
+Gets the state of the spell.
+</summary>
+            <param name="slot">The slot.</param>
+            <returns />
+        </member>
+        <member name="M:Entropy.Spellbook.UpdateChargeableSpell(Entropy.SpellSlot,SharpDX.Vector3,System.Boolean)">
+            <summary>
+Updates the chargeable spell.
+</summary>
+            <param name="slot">The slot.</param>
+            <param name="position">The position.</param>
+            <param name="releaseCast">if set to <c>true</c> [release cast].</param>
+        </member>
+        <member name="M:Entropy.Spellbook.CanLevelSlot(Entropy.SpellSlot)">
+            <summary>
+Determines whether this instance [can level slot] the specified slot.
+</summary>
+            <param name="slot">The slot.</param>
+            <returns>
+                <c>true</c> if this instance [can level slot] the specified slot; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="M:Entropy.Spellbook.LevelSpell(Entropy.SpellSlot)">
+            <summary>
+Levels the spell.
+</summary>
+            <param name="slot">The slot.</param>
+        </member>
+        <member name="M:Entropy.Spellbook.CastSpell(Entropy.SpellSlot)">
+            <summary>
+Casts the spell.
+</summary>
+            <param name="slot">The slot.</param>
+        </member>
+        <member name="M:Entropy.Spellbook.CastSpell(Entropy.SpellSlot,SharpDX.Vector3,SharpDX.Vector3)">
+            <summary>
+Casts the spell.
+</summary>
+            <param name="slot">The slot.</param>
+            <param name="startPosition">The start position.</param>
+            <param name="endPosition">The end position.</param>
+        </member>
+        <member name="M:Entropy.Spellbook.CastSpell(Entropy.SpellSlot,SharpDX.Vector3)">
+            <summary>
+Casts the spell.
+</summary>
+            <param name="slot">The slot.</param>
+            <param name="position">The position.</param>
+        </member>
+        <member name="M:Entropy.Spellbook.CastSpell(Entropy.SpellSlot,Entropy.AttackableUnit)">
+            <summary>
+Casts the spell.
+</summary>
+            <param name="slot">The slot.</param>
+            <param name="target">The target.</param>
+        </member>
+        <member name="E:Entropy.Spellbook.OnStopCast">
+            <summary>
+This event is fired when an <see cref="T:Entropy.AIBaseClient" /> stops casting a spell
+</summary>
+        </member>
+        <member name="E:Entropy.Spellbook.OnLocalLevelSpell">
+            <summary>
+This event is fired when the local player levels a spell
+</summary>
+        </member>
+        <member name="E:Entropy.Spellbook.OnLocalCastSpell">
+            <summary>
+This event is fired when the local player casts a spell
+</summary>
+        </member>
+        <member name="E:Entropy.Spellbook.OnLocalUpdateChargeableSpell">
+            <summary>
+This event is fired when the local player updates a chargeable spell
+</summary>
+        </member>
+        <member name="T:Entropy.Spellbook">
+            <summary>
+This class contains methods, fields and events relevant to spells and abilities
+</summary>
+        </member>
+        <member name="M:Entropy.AIMinionClient.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.AIMinionClient" /> class.
+</summary>
+            <param name="handle">The handle.</param>
+            <param name="networkID">The network identifier.</param>
+        </member>
+        <member name="T:Entropy.AIMinionClient">
+            <summary>
+This class is used for instances of minions
+</summary>
+        </member>
+        <member name="P:Entropy.Renderer.Direct3DDevice">
+            <summary>
+Gets the direct3 d device.
+</summary>
+            <value>
+The direct3 d device.
+</value>
+        </member>
+        <member name="P:Entropy.Renderer.ScreenResolutionY">
+            <summary>
+Gets the screen resolution y.
+</summary>
+            <value>
+The screen resolution y.
+</value>
+        </member>
+        <member name="P:Entropy.Renderer.ScreenResolutionX">
+            <summary>
+Gets the screen resolution x.
+</summary>
+            <value>
+The screen resolution x.
+</value>
+        </member>
+        <member name="P:Entropy.Renderer.ProjectionMatrix">
+            <summary>
+Gets the projection matrix.
+</summary>
+            <value>
+The projection matrix.
+</value>
+        </member>
+        <member name="P:Entropy.Renderer.ViewMatrix">
+            <summary>
+Gets the view matrix.
+</summary>
+            <value>
+The view matrix.
+</value>
+        </member>
+        <member name="M:Entropy.Renderer.DrawCircularRangeIndicator(SharpDX.Vector3,System.Single,SharpDX.Color)">
+            <summary>
+Draws the circular range indicator.
+</summary>
+            <param name="worldPosition">The world position.</param>
+            <param name="radius">The radius.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:Entropy.Renderer.ShowFloatingText(System.String,Entropy.GameObject,SharpDX.Color)">
+            <summary>
+Shows the floating text.
+</summary>
+            <param name="text">The text.</param>
+            <param name="target">The target.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:Entropy.Renderer.ScreenToWorld(SharpDX.Vector2)">
+            <summary>
+Converts screen position co-ordinates to world position co-ordinates.
+</summary>
+            <param name="screen">The screen position.</param>
+            <returns>The corresponding world position co-ordinates</returns>
+        </member>
+        <member name="M:Entropy.Renderer.WorldToScreen(SharpDX.Vector3)">
+            <summary>
+Converts world position co-ordinates to screen position co-ordinates.
+</summary>
+            <param name="world">The world position co-ordinates.</param>
+            <returns>The corresponding screen position co-ordinates</returns>
+        </member>
+        <member name="E:Entropy.Renderer.OnPostReset">
+            <summary>
+This event is fired after before the Direct3DDevice is reset.
+</summary>
+        </member>
+        <member name="E:Entropy.Renderer.OnReset">
+            <summary>
+This event is fired right before the Direct3DDevice is reset.
+</summary>
+        </member>
+        <member name="E:Entropy.Renderer.OnRenderUI">
+            <summary>
+This event is fired right before the game UI is rendered.
+Use this event to draw begind the game UI
+</summary>
+        </member>
+        <member name="E:Entropy.Renderer.OnRender">
+            <summary>
+This event is fired right before the game HUD is rendered.
+Use this event to draw begind the game HUD
+</summary>
+        </member>
+        <member name="E:Entropy.Renderer.OnBeginScene">
+            <summary>
+This event is fired when the scene begins
+</summary>
+        </member>
+        <member name="E:Entropy.Renderer.OnEndScene">
+            <summary>
+This event is fired when the scene ends
+</summary>
+        </member>
+        <member name="E:Entropy.Renderer.OnPresent">
+            <summary>
+This event is fired when the scene is presented
+</summary>
+        </member>
+        <member name="T:Entropy.Renderer">
+            <summary>
+This class contains methods, fields and events related to the game's renderer and drawing functions
+</summary>
+        </member>
+        <member name="P:Entropy.AITurretClient.TierPosition">
+            <summary>
+Gets the tier position.
+</summary>
+            <value>
+The tier position.
+</value>
+        </member>
+        <member name="M:Entropy.AITurretClient.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.AITurretClient" /> class.
+</summary>
+            <param name="handle">The handle.</param>
+            <param name="networkID">The network identifier.</param>
+        </member>
+        <member name="T:Entropy.AITurretClient">
+            <summary>
+This class is used for instances of turrets
+</summary>
+        </member>
+        <member name="P:Entropy.ItemShop.IsOpen">
+            <summary>
+Gets a value indicating whether the shop window is open.
+</summary>
+            <value>
+                <c>true</c> if the shop window is open; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="M:Entropy.ItemShop.UndoItem(System.Boolean)">
+            <summary>
+Undoes the last purchased item.
+</summary>
+        </member>
+        <member name="M:Entropy.ItemShop.BuyItem(System.UInt32)">
+            <summary>
+Buys the specified item.
+</summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Entropy.ItemShop.SellItem(System.UInt32)">
+            <summary>
+Sells the specified item.
+</summary>
+            <param name="slot">The slot.</param>
+        </member>
+        <member name="M:Entropy.ItemShop.SwapItem(System.UInt32,System.UInt32)">
+            <summary>
+Swaps the specified item.
+</summary>
+            <param name="fromSlot">From slot.</param>
+            <param name="toSlot">To slot.</param>
+        </member>
+        <member name="M:Entropy.ItemShop.Close(System.Boolean)">
+            <summary>
+Closes the shop window
+</summary>
+            <param name="playSound">if set to <c>true</c> [play sound].</param>
+        </member>
+        <member name="M:Entropy.ItemShop.Open(System.Boolean)">
+            <summary>
+Opens the shop window
+</summary>
+            <param name="playSound">if set to <c>true</c> [play sound].</param>
+        </member>
+        <member name="E:Entropy.ItemShop.OnBuyItem">
+            <summary>
+This event is fired when an item is bought
+</summary>
+        </member>
+        <member name="E:Entropy.ItemShop.OnSellItem">
+            <summary>
+This event is fired when an item is sold
+</summary>
+        </member>
+        <member name="E:Entropy.ItemShop.OnUndoItem">
+            <summary>
+This event is fired when an item is undone
+</summary>
+        </member>
+        <member name="E:Entropy.ItemShop.OnSwapItem">
+            <summary>
+This event is fired when an item is swapped
+</summary>
+        </member>
+        <member name="E:Entropy.ItemShop.OnClose">
+            <summary>
+This event is fired when the shop window is closed
+</summary>
+        </member>
+        <member name="E:Entropy.ItemShop.OnOpen">
+            <summary>
+This event is fired when the shop window is opened
+</summary>
+        </member>
+        <member name="T:Entropy.ItemShop">
+            <summary>
+This class contains fields and methods relating to the ingame shop
+</summary>
+        </member>
+        <member name="P:Entropy.AIHeroClient.Perks">
+            <summary>
+Gets the perks.
+</summary>
+            <value>
+The perks
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.InventorySlots">
+            <summary>
+Gets the inventory slots.
+</summary>
+            <value>
+The inventory slots.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.TrueDamageTaken">
+            <summary>
+Gets the true damage taken.
+</summary>
+            <value>
+The true damage taken.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.MagicDamageTaken">
+            <summary>
+Gets the magic damage taken.
+</summary>
+            <value>
+The magic damage taken.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.PhysicalDamageTaken">
+            <summary>
+Gets the physical damage taken.
+</summary>
+            <value>
+The physical damage taken.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.EvolvePoints">
+            <summary>
+Gets the evolve points.
+</summary>
+            <value>
+The evolve points.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.NumNeutralMinionsKilled">
+            <summary>
+Gets the number of neutral minions killed.
+</summary>
+            <value>
+The number of neutral minions killed.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.InputLocks">
+            <summary>
+Gets the input locks.
+</summary>
+            <value>
+The input locks.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.HeroExperience">
+            <summary>
+Gets the hero experience.
+</summary>
+            <value>
+The hero experience.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.EvolveFlag">
+            <summary>
+Gets the evolve flag.
+</summary>
+            <value>
+The evolve flag.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.HealthBarCharacterIDForIcon">
+            <summary>
+Gets the health bar character identifier for icon.
+</summary>
+            <value>
+The health bar character identifier for icon.
+</value>
+        </member>
+        <member name="P:Entropy.AIHeroClient.CanShop">
+            <summary>
+Gets a value indicating whether this instance can shop.
+</summary>
+            <value>
+                <c>true</c> if this instance can shop; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="M:Entropy.AIHeroClient.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.AIHeroClient" /> class.
+</summary>
+            <param name="handle">The handle.</param>
+            <param name="networkID">The network identifier.</param>
+        </member>
+        <member name="T:Entropy.AIHeroClient">
+            <summary>
+This class is used for instances of champions and other heroes.
+</summary>
+            <seealso cref="T:Entropy.AIBaseClient" />
+        </member>
+        <member name="P:Entropy.InventorySlot.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.InventorySlot.Slot">
+            <summary>
+Gets the slot.
+</summary>
+            <value>
+The slot.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.Owner">
+            <summary>
+Gets the owner.
+</summary>
+            <value>
+The owner.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.UpdateTime">
+            <summary>
+Gets the update time.
+</summary>
+            <value>The update time.</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.ItemID">
+            <summary>
+Gets the identifier.
+</summary>
+            <value>
+The identifier.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.Price">
+            <summary>
+Gets the price.
+</summary>
+            <value>
+The price.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.BuffName">
+            <summary>
+Gets the tooltip.
+</summary>
+            <value>
+The tooltip.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.SpellName">
+            <summary>
+Gets the tooltip.
+</summary>
+            <value>
+The tooltip.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.Tooltip">
+            <summary>
+Gets the tooltip.
+</summary>
+            <value>
+The tooltip.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.Name">
+            <summary>
+Gets the name.
+</summary>
+            <value>
+The name.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.IconName">
+            <summary>
+Gets the name of the icon.
+</summary>
+            <value>
+The name of the icon.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.DisplayName">
+            <summary>
+Gets the display name.
+</summary>
+            <value>
+The display name.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.Description">
+            <summary>
+Gets the description.
+</summary>
+            <value>
+The description.
+</value>
+        </member>
+        <member name="P:Entropy.InventorySlot.Stacks">
+            <summary>
+Gets the stacks.
+</summary>
+            <value>
+The stacks.
+</value>
+        </member>
+        <member name="T:Entropy.InventorySlot">
+            <summary>
+This class contains fields related to an AIBaseClient's inventory slots
+</summary>
+        </member>
+        <member name="P:Entropy.BuffInstance.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.BuffInstance.Caster">
+            <summary>
+Gets the caster.
+</summary>
+            <value>
+The caster.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.SourceName">
+            <summary>
+Gets the name of the source.
+</summary>
+            <value>
+The name of the source.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.Type">
+            <summary>
+Gets the type.
+</summary>
+            <value>
+The type.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.ExpireTime">
+            <summary>
+Gets the expire time.
+</summary>
+            <value>
+The expire time.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.Name">
+            <summary>
+Gets the name.
+</summary>
+            <value>
+The name.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.Owner">
+            <summary>
+Gets the owner.
+</summary>
+            <value>
+The owner.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.StartTime">
+            <summary>
+Gets the start time.
+</summary>
+            <value>
+The start time.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.Stacks">
+            <summary>
+Gets the buff stack count.
+</summary>
+            <value>
+The stack count.
+</value>
+        </member>
+        <member name="P:Entropy.BuffInstance.Count">
+            <summary>
+Gets the buff count.
+</summary>
+            <value>
+The buff count.
+</value>
+        </member>
+        <member name="T:Entropy.BuffInstance">
+            <summary>
+This class is used for instances of buffs
+</summary>
+        </member>
+        <member name="P:Entropy.BuffManager.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.BuffManager.BuffsUncached">
+            <summary>
+Gets the buffs uncached.
+</summary>
+            <value>
+The buffs uncached.
+</value>
+        </member>
+        <member name="P:Entropy.BuffManager.Owner">
+            <summary>
+Gets the owner.
+</summary>
+            <value>
+The owner.
+</value>
+        </member>
+        <member name="M:Entropy.BuffManager.HasBuffOfType(&lt;unknown type&gt;)">
+            <summary>
+Determines whether [has buff type] [the specified type].
+</summary>
+            <param name="type">The type.</param>
+            <returns>
+                <c>true</c> if [has buff type] [the specified type]; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="E:Entropy.BuffManager.OnUpdateBuff">
+            <summary>
+This event is fired when the buff manager updates a buff
+</summary>
+        </member>
+        <member name="E:Entropy.BuffManager.OnLoseBuff">
+            <summary>
+This event is fired when the buff manager loses a buff
+</summary>
+        </member>
+        <member name="E:Entropy.BuffManager.OnGainBuff">
+            <summary>
+This event is fired when the buff manager gains a buff
+</summary>
+        </member>
+        <member name="T:Entropy.BuffManager">
+            <summary>
+This class is used for managing and retrieving buffs
+</summary>
+            <seealso cref="T:Entropy.BuffInstance" />
+        </member>
+        <member name="P:Entropy.NavGridCell.GridPosition">
+            <summary>
+Gets the grid position.
+</summary>
+            <value>
+The grid position.
+</value>
+        </member>
+        <member name="P:Entropy.NavGridCell.WorldPosition">
+            <summary>
+Gets the world position.
+</summary>
+            <value>
+The world position.
+</value>
+        </member>
+        <member name="P:Entropy.NavGridCell.CollFlags">
+            <summary>
+Gets or sets the collision flags.
+</summary>
+            <value>
+The collision flags.
+</value>
+        </member>
+        <member name="M:Entropy.NavGridCell.#ctor(SharpDX.Vector2)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.NavGridCell" /> class.
+</summary>
+            <param name="cell">The cell-space position.</param>
+        </member>
+        <member name="M:Entropy.NavGridCell.#ctor(SharpDX.Vector3)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.NavGridCell" /> class.
+</summary>
+            <param name="pos">The position.</param>
+        </member>
+        <member name="T:Entropy.NavGridCell">
+            <summary>
+This class is used for instances of a single navigation mesh cell
+</summary>
+        </member>
+        <member name="P:Entropy.NavGrid.Offset">
+            <summary>
+Gets or sets the navgrid offset.
+</summary>
+            <value>
+The offset.
+</value>
+        </member>
+        <member name="P:Entropy.NavGrid.Maximum">
+            <summary>
+Gets or sets the maximum navgrid vector.
+</summary>
+            <value>
+The maximum.
+</value>
+        </member>
+        <member name="P:Entropy.NavGrid.CellSize">
+            <summary>
+Gets or sets the cell scale.
+</summary>
+            <value>
+The cell scale.
+</value>
+        </member>
+        <member name="P:Entropy.NavGrid.CellWidth">
+            <summary>
+Gets or sets the width of the cell.
+</summary>
+            <value>
+The width of the cell.
+</value>
+        </member>
+        <member name="P:Entropy.NavGrid.CellHeight">
+            <summary>
+Gets or sets the height of the cell.
+</summary>
+            <value>
+The height of the cell.
+</value>
+        </member>
+        <member name="P:Entropy.NavGrid.Height">
+            <summary>
+Gets or sets the height.
+</summary>
+            <value>
+The height.
+</value>
+        </member>
+        <member name="P:Entropy.NavGrid.Width">
+            <summary>
+Gets or sets the width.
+</summary>
+            <value>
+The width.
+</value>
+        </member>
+        <member name="M:Entropy.NavGrid.CellToWorld(SharpDX.Vector2)">
+            <summary>
+Converts cell-space co-ordinates to world-space co-ordinates.
+</summary>
+            <param name="cell">The cell space co-ordinates.</param>
+            <returns>The world-space co-ordinates</returns>
+        </member>
+        <member name="M:Entropy.NavGrid.WorldToCell(SharpDX.Vector3)">
+            <summary>
+Converts world-space co-ordinates to cell-space co-ordinates.
+</summary>
+            <param name="world">The world space co-ordinates.</param>
+            <returns>The cell-space co-ordinates</returns>
+        </member>
+        <member name="M:Entropy.NavGrid.GetHeightForPosition(SharpDX.Vector2)">
+            <summary>
+Gets the height for position.
+</summary>
+            <param name="position">The position.</param>
+            <returns />
+        </member>
+        <member name="T:Entropy.NavGrid">
+            <summary>
+This class contains fields and methods relevant to the game's navigation mesh and grid systems
+</summary>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentDamageToBarracksMinionMod">
+            <summary>
+Gets the percent damage to barracks minion mod.
+</summary>
+            <value>The percent damage to barracks minion mod.</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatMagicDamageMod">
+            <summary>
+Gets the flat magic damage mod.
+</summary>
+            <value>
+The flat magic damage mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentMagicDamageMod">
+            <summary>
+Gets the percent magic damage mod.
+</summary>
+            <value>
+The percent magic damage mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.SpellBlock">
+            <summary>
+Gets the spell block.
+</summary>
+            <value>
+The spell block.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentBonusMagicPenetration">
+            <summary>
+Gets the percent bonus magic penetration.
+</summary>
+            <value>
+The percent bonus magic penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.SAR">
+            <summary>
+Gets the sar.
+</summary>
+            <value>
+The sar.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentBaseAttackDamageMod">
+            <summary>
+Gets the percent base attack damage mod.
+</summary>
+            <value>
+The percent base attack damage mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.Armor">
+            <summary>
+Gets the armor.
+</summary>
+            <value>
+The armor.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatMagicReduction">
+            <summary>
+Gets the flat magic reduction.
+</summary>
+            <value>
+The flat magic reduction.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.AttackRange">
+            <summary>
+Gets the attack range.
+</summary>
+            <value>
+The attack range.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentCCReduction">
+            <summary>
+Gets the percent cc reduction.
+</summary>
+            <value>
+The percent cc reduction.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.SAREnabled">
+            <summary>
+Gets the sar enabled.
+</summary>
+            <value>
+The sar enabled.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentLifeStealMod">
+            <summary>
+Gets the percent life steal mod.
+</summary>
+            <value>
+The percent life steal mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentEXPBonus">
+            <summary>
+Gets the percent exp bonus.
+</summary>
+            <value>
+The percent exp bonus.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PathfindingRadiusMod">
+            <summary>
+Gets the pathfinding radius mod.
+</summary>
+            <value>
+The pathfinding radius mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.MaxSAR">
+            <summary>
+Gets the maximum sar.
+</summary>
+            <value>
+The maximum sar.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PrimaryARBaseRegenRateRep">
+            <summary>
+Gets the primary ar base regen rate rep.
+</summary>
+            <value>
+The primary ar base regen rate rep.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.HPRegenRate">
+            <summary>
+Gets the hp regen rate.
+</summary>
+            <value>
+The hp regen rate.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.Dodge">
+            <summary>
+Gets the dodge.
+</summary>
+            <value>
+The dodge.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatCastRangeMod">
+            <summary>
+Gets the flat cast range mod.
+</summary>
+            <value>
+The flat cast range mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.MagicLethality">
+            <summary>
+Gets the magic lethality.
+</summary>
+            <value>
+The magic lethality.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatBaseAttackDamageMod">
+            <summary>
+Gets the flat base attack damage mod.
+</summary>
+            <value>
+The flat base attack damage mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BonusSpellBlock">
+            <summary>
+Gets the bonus spell block.
+</summary>
+            <value>
+The bonus spell block.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatPhysicalDamageMod">
+            <summary>
+Gets the flat physical damage mod.
+</summary>
+            <value>
+The flat physical damage mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BaseHPRegenRate">
+            <summary>
+Gets the base hp regen rate.
+</summary>
+            <value>
+The base hp regen rate.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentCooldownMod">
+            <summary>
+Gets the percent cooldown mod.
+</summary>
+            <value>
+The percent cooldown mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BaseAttackDamageSansPercentScale">
+            <summary>
+Gets the base attack damage sans percent scale.
+</summary>
+            <value>
+The base attack damage sans percent scale.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentSpellVampMod">
+            <summary>
+Gets the percent spell vamp mod.
+</summary>
+            <value>
+The percent spell vamp mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentMagicPenetration">
+            <summary>
+Gets the percent magic penetration.
+</summary>
+            <value>
+The percent magic penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PAR">
+            <summary>
+Gets the par.
+</summary>
+            <value>
+The par.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentCritTotalArmorPenetration">
+            <summary>
+Gets the percent crit total armor penetration.
+</summary>
+            <value>
+The percent crit total armor penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.SecondaryARBaseRegenRateRep">
+            <summary>
+Gets the secondary ar base regen rate rep.
+</summary>
+            <value>
+The secondary ar base regen rate rep.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentPhysicalDamageMod">
+            <summary>
+Gets the percent physical damage mod.
+</summary>
+            <value>
+The percent physical damage mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BaseAttackDamage">
+            <summary>
+Gets the base attack damage.
+</summary>
+            <value>
+The base attack damage.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BaseAbilityDamage">
+            <summary>
+Gets the base ability damage.
+</summary>
+            <value>
+The base ability damage.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PassiveCooldownTotalTime">
+            <summary>
+Gets the passive cooldown total time.
+</summary>
+            <value>
+The passive cooldown total time.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.SecondaryARRegenRateRep">
+            <summary>
+Gets the secondary ar regen rate rep.
+</summary>
+            <value>
+The secondary ar regen rate rep.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.ScaleSkinCoef">
+            <summary>
+Gets the scale skin coef.
+</summary>
+            <value>
+The scale skin coef.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentArmorPenetration">
+            <summary>
+Gets the percent armor penetration.
+</summary>
+            <value>
+The percent armor penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentBubbleRadiusMod">
+            <summary>
+Gets the percent bubble radius mod.
+</summary>
+            <value>
+The percent bubble radius mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentBonusArmorPenetration">
+            <summary>
+Gets the percent bonus armor penetration.
+</summary>
+            <value>
+The percent bonus armor penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BonusArmor">
+            <summary>
+Gets the bonus armor.
+</summary>
+            <value>
+The bonus armor.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.AttackSpeedMod">
+            <summary>
+Gets the attack speed mod.
+</summary>
+            <value>
+The attack speed mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.MaxPAR">
+            <summary>
+Gets the maximum par.
+</summary>
+            <value>
+The maximum par.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentCooldownCapMod">
+            <summary>
+Gets the percent cooldown cap mod.
+</summary>
+            <value>
+The percent cooldown cap mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentCritBonusArmorPenetration">
+            <summary>
+Gets the percent crit bonus armor penetration.
+</summary>
+            <value>
+The percent crit bonus armor penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatArmorPenetration">
+            <summary>
+Gets the flat armor penetration.
+</summary>
+            <value>
+The flat armor penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PassiveCooldownEndTime">
+            <summary>
+Gets the passive cooldown end time.
+</summary>
+            <value>
+The passive cooldown end time.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PrimaryARRegenRateRep">
+            <summary>
+Gets the primary ar regen rate rep.
+</summary>
+            <value>
+The primary ar regen rate rep.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PAREnabled">
+            <summary>
+Gets the par enabled.
+</summary>
+            <value>
+The par enabled.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PhysicalLethality">
+            <summary>
+Gets the physical lethality.
+</summary>
+            <value>
+The physical lethality.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatMagicPenetration">
+            <summary>
+Gets the flat magic penetration.
+</summary>
+            <value>
+The flat magic penetration.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.Crit">
+            <summary>
+Gets the critical chance.
+</summary>
+            <value>
+The critical chance.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.PercentMagicReduction">
+            <summary>
+Gets the percent magic reduction.
+</summary>
+            <value>
+The percent magic reduction.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FlatBubbleRadiusMod">
+            <summary>
+Gets the flat bubble radius mod.
+</summary>
+            <value>
+The flat bubble radius mod.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.MoveSpeedBaseIncrease">
+            <summary>
+Gets the movement speed base increase.
+</summary>
+            <value>
+The movement speed base increase.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.MoveSpeed">
+            <summary>
+Gets the movement speed.
+</summary>
+            <value>
+The movement speed.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.IsRanged">
+            <summary>
+Gets a value indicating whether this instance is ranged.
+</summary>
+            <value>
+                <c>true</c> if this instance is ranged; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.IsMelee">
+            <summary>
+Gets a value indicating whether this instance is melee.
+</summary>
+            <value>
+                <c>true</c> if this instance is melee; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.CombatType">
+            <summary>
+Gets the type of the combat.
+</summary>
+            <value>
+The type of the combat.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.SkinID">
+            <summary>
+Gets the skin identifier.
+</summary>
+            <value>
+The skin identifier.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.ModelName">
+            <summary>
+Gets the name of the model.
+</summary>
+            <value>
+The name of the model.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.Path">
+            <summary>
+Gets the current path.
+</summary>
+            <value>
+The path.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.Lane">
+            <summary>
+Gets the lane.
+</summary>
+            <value>
+The lane.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.LastTarget">
+            <summary>
+Gets the last target.
+</summary>
+            <value>
+The last target.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FollowTargetNetID">
+            <summary>
+Gets the follow target net identifier.
+</summary>
+            <value>
+The follow target net identifier.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BuffManager">
+            <summary>
+Gets the buff manager.
+</summary>
+            <value>
+The buff manager.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.HasBotAI">
+            <summary>
+Gets a value indicating whether this instance has bot ai.
+</summary>
+            <value>
+                <c>true</c> if this instance has bot ai; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.GoldTotal">
+            <summary>
+Gets the gold total.
+</summary>
+            <value>
+The gold total.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.BasicAttack">
+            <summary>
+Gets the basic attack.
+</summary>
+            <value>
+The basic attack.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.InfoBarPosition">
+            <summary>
+Gets the information bar position.
+</summary>
+            <value>
+The information bar position.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.CharName">
+            <summary>
+Gets the name of the character.
+</summary>
+            <value>
+The name of the character.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.Spellbook">
+            <summary>
+Gets the spellbook.
+</summary>
+            <value>
+The spellbook.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.FollowerTargetDelay">
+            <summary>
+Gets the follower target delay.
+</summary>
+            <value>
+The follower target delay.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.Gold">
+            <summary>
+Gets the gold.
+</summary>
+            <value>
+The gold.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.MinimumGold">
+            <summary>
+Gets the minimum gold.
+</summary>
+            <value>
+The minimum gold.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.CharState">
+            <summary>
+Gets the state of the character.
+</summary>
+            <value>
+The state of the character.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.RotationMatrix">
+            <summary>
+Gets the rotation matrix.
+</summary>
+            <value>
+The rotation matrix.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.AttackCastDelay">
+            <summary>
+Gets the attack cast delay.
+</summary>
+            <value>
+The attack cast delay.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.AttackDelay">
+            <summary>
+Gets the attack delay.
+</summary>
+            <value>
+The attack delay.
+</value>
+        </member>
+        <member name="P:Entropy.AIBaseClient.IsBot">
+            <summary>
+Gets a value indicating whether this instance is bot.
+</summary>
+            <value>
+                <c>true</c> if this instance is bot; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="M:Entropy.AIBaseClient.UpdateModel(System.UInt32)">
+            <summary>
+Updates the model.
+</summary>
+            <param name="skinID">The skin identifier for the model.</param>
+        </member>
+        <member name="M:Entropy.AIBaseClient.CalculatePath(SharpDX.Vector3,SharpDX.Vector3,System.Boolean)">
+            <summary>
+Calculates a path between two specified points.
+</summary>
+            <param name="start">The start point.</param>
+            <param name="end">The end point.</param>
+            <param name="smoothPath">if set to <c>true</c> [calculates a smooth path].</param>
+            <returns />
+        </member>
+        <member name="M:Entropy.AIBaseClient.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.AIBaseClient" /> class.
+</summary>
+            <param name="handle">The handle.</param>
+            <param name="networkID">The network identifier.</param>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnSpawn">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> is spawned
+</summary>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnNewPath">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> creates a new path
+</summary>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnFinishCast">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> finishes casting a windable basic attack or spell
+</summary>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnProcessSpellCast">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> processes a spell cast
+</summary>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnProcessBasicAttack">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> processes a basic attack
+</summary>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnDeath">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> dies
+</summary>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnAnimationPlay">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> plays an animation
+</summary>
+        </member>
+        <member name="E:Entropy.AIBaseClient.OnTeleport">
+            <summary>
+This event is fired whenever an <see cref="T:Entropy.AIBaseClient" /> teleports
+</summary>
+        </member>
+        <member name="T:Entropy.AIBaseClient">
+            <summary>
+This class is used for instances of units that have stats such as armor or can perform animations
+</summary>
+        </member>
+        <member name="P:Entropy.ObjectManager.ObjectsUncached">
+            <summary>
+Gets the objects uncached.
+</summary>
+            <value>
+The objects uncached.
+</value>
+        </member>
+        <member name="P:Entropy.ObjectManager.ObjectsUsed">
+            <summary>
+Gets the objects used.
+</summary>
+            <value>
+The objects used.
+</value>
+        </member>
+        <member name="P:Entropy.ObjectManager.HighestPlayerObjectID">
+            <summary>
+Gets the highest player object identifier.
+</summary>
+            <value>
+The highest player object identifier.
+</value>
+        </member>
+        <member name="P:Entropy.ObjectManager.MaxObjects">
+            <summary>
+Gets the maximum objects.
+</summary>
+            <value>
+The maximum objects.
+</value>
+        </member>
+        <member name="P:Entropy.ObjectManager.HighestObjectID">
+            <summary>
+Gets the highest object identifier.
+</summary>
+            <value>
+The highest object identifier.
+</value>
+        </member>
+        <member name="T:Entropy.ObjectManager">
+            <summary>
+This class manages the <see cref="T:Entropy.GameObject" />s
+<seealso cref="T:Entropy.GameObject" /></summary>
+        </member>
+        <member name="P:Entropy.GameObjectType.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.GameObjectType.TypeID">
+            <summary>
+Gets the identifier.
+</summary>
+            <value>
+The identifier.
+</value>
+        </member>
+        <member name="P:Entropy.GameObjectType.Name">
+            <summary>
+Gets the name.
+</summary>
+            <value>
+The name.
+</value>
+        </member>
+        <member name="T:Entropy.GameObjectType">
+            <summary>
+A class containing fields related to the GameObject's type
+</summary>
+        </member>
+        <member name="T:Entropy.SpellData">
+            <summary>
+This class contains various static information about a spell
+</summary>
+        </member>
+        <member name="P:Entropy.MissileClient.Caster">
+            <summary>
+Gets the caster.
+</summary>
+            <value>
+The caster.
+</value>
+        </member>
+        <member name="P:Entropy.MissileClient.SpellData">
+            <summary>
+Gets the spell data.
+</summary>
+            <value>
+The spell data.
+</value>
+        </member>
+        <member name="P:Entropy.MissileClient.Target">
+            <summary>
+Gets the target.
+</summary>
+            <value>
+The target.
+</value>
+        </member>
+        <member name="P:Entropy.MissileClient.StartPosition">
+            <summary>
+Gets the start position.
+</summary>
+            <value>
+The start position.
+</value>
+        </member>
+        <member name="P:Entropy.MissileClient.EndPosition">
+            <summary>
+Gets the end position.
+</summary>
+            <value>
+The end position.
+</value>
+        </member>
+        <member name="M:Entropy.MissileClient.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.MissileClient" /> class.
+</summary>
+            <param name="handle">The handle.</param>
+            <param name="networkID">The network identifier.</param>
+        </member>
+        <member name="T:Entropy.MissileClient">
+            <summary>
+This class contains fields specific to missiles
+</summary>
+        </member>
+        <member name="P:Entropy.AttackableUnit.IsVisible">
+            <summary>
+Gets the whether or not this instance is visible.
+</summary>
+            <value>Whether [this object] [is visible].</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.EmpoweredBitField">
+            <summary>
+Gets the empowered bit field.
+</summary>
+            <value>
+The empowered bit field.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.MagicalDamagePercentageModifier">
+            <summary>
+Gets the magical damage percentage modifier.
+</summary>
+            <value>
+The magical damage percentage modifier.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.PhysicalDamagePercentageModifier">
+            <summary>
+Gets the physical damage percentage modifier.
+</summary>
+            <value>
+The physical damage percentage modifier.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.ChampSpecificHealth">
+            <summary>
+Gets the champ specific health.
+</summary>
+            <value>
+The champ specific health.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.LifetimeTicks">
+            <summary>
+Gets the lifetime ticks.
+</summary>
+            <value>The lifetime ticks.</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.MaxLifetime">
+            <summary>
+Gets the maximum lifetime.
+</summary>
+            <value>The maximum lifetime.</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.Lifetime">
+            <summary>
+Gets the lifetime.
+</summary>
+            <value>The lifetime.</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.MaxHP">
+            <summary>
+Gets the maximum health points.
+</summary>
+            <value>
+The maximum health points.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.HP">
+            <summary>
+Gets the health points.
+</summary>
+            <value>
+The health points.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.MaxHPPenalty">
+            <summary>
+Gets the maximum health point penalty.
+</summary>
+            <value>
+The maximum health point penalty.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.IsLifestealImmune">
+            <summary>
+Gets a value indicating whether this instance is lifesteal immune.
+</summary>
+            <value>
+                <c>true</c> if this instance is lifesteal immune; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.AllShield">
+            <summary>
+Gets all shield.
+</summary>
+            <value>
+All shield.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.IsZombie">
+            <summary>
+Gets a value indicating whether this instance is a zombie.
+</summary>
+            <value>
+                <c>true</c> if this instance is a zombie; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.IsPhysicalImmune">
+            <summary>
+Gets a value indicating whether this instance is physical immune.
+</summary>
+            <value>
+                <c>true</c> if this instance is physical immune; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.PhysicalShield">
+            <summary>
+Gets the physical shield.
+</summary>
+            <value>
+The physical shield.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.StopShieldFade">
+            <summary>
+Gets the stop shield fade.
+</summary>
+            <value>
+The stop shield fade.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.IsTargetable">
+            <summary>
+Gets a value indicating whether this instance is targetable.
+</summary>
+            <value>
+                <c>true</c> if this instance is targetable; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.IsMagicImmune">
+            <summary>
+Gets a value indicating whether this instance is magic immune.
+</summary>
+            <value>
+                <c>true</c> if this instance is magic immune; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.IsTargetableToAllies">
+            <summary>
+Gets a value indicating whether this instance is untargetable to allies.
+</summary>
+            <value>
+                <c>true</c> if this instance is untargetable to allies; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.MaxMP">
+            <summary>
+Gets the maximum mana points.
+</summary>
+            <value>
+The maximum mana points.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.MP">
+            <summary>
+Gets the mana points.
+</summary>
+            <value>
+The mana points.
+</value>
+        </member>
+        <member name="P:Entropy.AttackableUnit.MagicalShield">
+            <summary>
+Gets the magical shield.
+</summary>
+            <value>
+The magical shield.
+</value>
+        </member>
+        <member name="E:Entropy.AttackableUnit.OnLeaveVisibilityClient">
+            <summary>
+This event is fired whenever the object exits local visibility
+</summary>
+        </member>
+        <member name="E:Entropy.AttackableUnit.OnEnterVisibilityClient">
+            <summary>
+This event is fired whenever the object enters local visibility
+</summary>
+        </member>
+        <member name="E:Entropy.AttackableUnit.OnUpdatePosition">
+            <summary>
+This event is fired whenever the object updates its position.
+</summary>
+        </member>
+        <member name="M:Entropy.AttackableUnit.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.AttackableUnit" /> class.
+</summary>
+            <param name="handle">The handle.</param>
+            <param name="networkID">The network identifier.</param>
+        </member>
+        <member name="T:Entropy.AttackableUnit">
+            <summary>
+This class is used for instances of objects that can be attacked
+</summary>
+            <seealso cref="T:Entropy.GameObject" />
+        </member>
+        <member name="P:Entropy.GameObject.IsValid">
+            <summary>
+Gets a value indicating whether this instance exists.
+</summary>
+            <returns>
+                <c>true</c> if this instance exists; otherwise, <c>false</c>.
+</returns>
+        </member>
+        <member name="P:Entropy.GameObject.BoundingRadius">
+            <summary>
+Gets the bounding radius.
+</summary>
+            <value>
+The bounding radius.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.ActionState">
+            <summary>
+Gets the state of the action.
+</summary>
+            <value>
+The state of the action.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.BBox">
+            <summary>
+Gets the bounding box.
+</summary>
+            <value>
+The bounding box.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.IsDead">
+            <summary>
+Gets a value indicating whether this instance is dead.
+</summary>
+            <value>
+                <c>true</c> if this instance is dead; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.Name">
+            <summary>
+Gets the name.
+</summary>
+            <value>
+The name.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.Position">
+            <summary>
+Gets the position.
+</summary>
+            <value>
+The position.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.Team">
+            <summary>
+Gets the object team.
+</summary>
+            <value>
+The object team.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.Handle">
+            <summary>
+Gets the object handle. An object handle is a client sided object identifier.
+</summary>
+            <value>
+The object handle.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.NetworkID">
+            <summary>
+Gets the network identifier.
+</summary>
+            <value>
+The network identifier.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.Type">
+            <summary>
+Gets the object type.
+</summary>
+            <value>
+The object type.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.IsVisibleOnScreen">
+            <summary>
+Gets a value indicating whether this instance is visible on screen.
+</summary>
+            <value>
+                <c>true</c> if this instance is visible on screen; otherwise, <c>false</c>.
+</value>
+        </member>
+        <member name="P:Entropy.GameObject.MemoryAddress">
+            <summary>
+Gets the memory address.
+</summary>
+            <value>
+The memory address.
+</value>
+        </member>
+        <member name="M:Entropy.GameObject.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+Initializes a new instance of the <see cref="T:Entropy.GameObject" /> class.
+</summary>
+            <param name="handle">The handle.</param>
+            <param name="networkID">The network identifier.</param>
+        </member>
+        <member name="E:Entropy.GameObject.OnDelete">
+            <summary>
+This event is fired when a <see cref="T:Entropy.GameObject" /> is deleted
+</summary>
+        </member>
+        <member name="E:Entropy.GameObject.OnCreate">
+            <summary>
+This event is fired when a new <see cref="T:Entropy.GameObject" /> is created
+</summary>
+        </member>
+        <member name="T:Entropy.GameObject">
+            <summary>
+This class is used for instances of objects existing in the game
+</summary>
+        </member>
+        <member name="T:Entropy.Emote">
+            <summary>
+This enum identifies the types of emote that a player can send
+</summary>
+        </member>
+        <member name="T:Entropy.HeroOrder">
+            <summary>
+This enum identifies the types of orders that can be given to the player
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.Stop">
+            <summary>
+The stop order
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.AttackTo">
+            <summary>
+The attack to order
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.MovePet">
+            <summary>
+The move pet order
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.AutoAttack">
+            <summary>
+The automatic attack order
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.AutoAttackPet">
+            <summary>
+The automatic attack pet order
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.AttackUnit">
+            <summary>
+The attack unit order
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.MoveTo">
+            <summary>
+The move to order
+</summary>
+        </member>
+        <member name="F:Entropy.HeroOrder.HoldPosition">
+            <summary>
+The hold position order
+</summary>
+        </member>
+        <member name="T:Entropy.ClickType">
+            <summary>
+This enum identifies the type of click (red/green)
+</summary>
+        </member>
+        <member name="F:Entropy.ClickType.AttackMove">
+            <summary>
+The attack move click type
+</summary>
+        </member>
+        <member name="F:Entropy.ClickType.MoveTo">
+            <summary>
+The standard right-click click type
+</summary>
+        </member>
+        <member name="T:Entropy.PingType">
+            <summary>
+This enum identifies the type of ping shown or sent
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.AssistMe">
+            <summary>
+The assist me ping
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.OnMyWay">
+            <summary>
+The on my way ping
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Danger">
+            <summary>
+The danger ping
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.EnemyMissing">
+            <summary>
+The enemy missing ping
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Fallback">
+            <summary>
+The fallback ping
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Normal">
+            <summary>
+The normal blue ping
+</summary>
+        </member>
+        <member name="T:Entropy.GameConsoleMessageType">
+            <summary>
+This enum identifies the type of chat message processed
+</summary>
+        </member>
+        <member name="F:Entropy.GameConsoleMessageType.ClientSideMessage">
+            <summary>
+A client-sided message from the game
+</summary>
+        </member>
+        <member name="F:Entropy.GameConsoleMessageType.PlayerMessage">
+            <summary>
+A messge from a player
+</summary>
+        </member>
+        <member name="T:Entropy.SpellDataTargetType">
+            <summary>
+This enum identifies the type of targetting used by a spell
+</summary>
+        </member>
+        <member name="T:Entropy.SpellState">
+            <summary>
+This enum identifies the current state of a spell
+</summary>
+        </member>
+        <member name="F:Entropy.SpellState.NoMana">
+            <summary>
+There is not enough mana for the spell
+</summary>
+        </member>
+        <member name="F:Entropy.SpellState.Cooldown">
+            <summary>
+The spell is cooldown
+</summary>
+        </member>
+        <member name="F:Entropy.SpellState.Disabled">
+            <summary>
+The spell is disabled
+</summary>
+        </member>
+        <member name="F:Entropy.SpellState.Surpressed">
+            <summary>
+The spell is surpressed
+</summary>
+        </member>
+        <member name="F:Entropy.SpellState.NotLearned">
+            <summary>
+The spell is not learned
+</summary>
+        </member>
+        <member name="F:Entropy.SpellState.Ready">
+            <summary>
+The spell is ready
+</summary>
+        </member>
+        <member name="T:Entropy.TurretPosition">
+            <summary>
+This enum identifies the turret's position
+</summary>
+        </member>
+        <member name="T:Entropy.MapLane">
+            <summary>
+Identifies the lane the object belongs to
+</summary>
+        </member>
+        <member name="F:Entropy.MapLane.Unknown">
+            <summary>
+An unknown lane
+</summary>
+        </member>
+        <member name="F:Entropy.MapLane.Top">
+            <summary>
+The top lane
+</summary>
+        </member>
+        <member name="F:Entropy.MapLane.Middle">
+            <summary>
+The middle lane
+</summary>
+        </member>
+        <member name="F:Entropy.MapLane.Bottom">
+            <summary>
+The bottom lane
+</summary>
+        </member>
+        <member name="T:Entropy.CharacterState">
+            <summary>
+This enum identifies the current state of the unit
+</summary>
+        </member>
+        <member name="T:Entropy.CollisionFlags">
+            <summary>
+This enum identifies the different collision flags a cell may have
+</summary>
+        </member>
+        <member name="F:Entropy.CollisionFlags.GlobalVision">
+            <summary>
+Global Vision collision flags
+</summary>
+        </member>
+        <member name="F:Entropy.CollisionFlags.Prop">
+            <summary>
+Prop collision flags
+</summary>
+        </member>
+        <member name="F:Entropy.CollisionFlags.Building">
+            <summary>
+Building collision flags
+</summary>
+        </member>
+        <member name="F:Entropy.CollisionFlags.Wall">
+            <summary>
+Wall collision flags
+</summary>
+        </member>
+        <member name="F:Entropy.CollisionFlags.Grass">
+            <summary>
+Grass (brush) collision flags
+</summary>
+        </member>
+        <member name="F:Entropy.CollisionFlags.None">
+            <summary>
+No collsion flags
+</summary>
+        </member>
+        <member name="T:Entropy.DisabledDrawingsFlags">
+            <summary>
+This enum contains the type of drawings to be disabled
+</summary>
+        </member>
+        <member name="F:Entropy.DisabledDrawingsFlags.RenderUI">
+            <summary>
+The render UI event
+</summary>
+        </member>
+        <member name="F:Entropy.DisabledDrawingsFlags.Render">
+            <summary>
+The render event
+</summary>
+        </member>
+        <member name="F:Entropy.DisabledDrawingsFlags.EndScene">
+            <summary>
+The end scene event
+</summary>
+        </member>
+        <member name="F:Entropy.DisabledDrawingsFlags.BeginScene">
+            <summary>
+The begin scene event
+</summary>
+        </member>
+        <member name="F:Entropy.DisabledDrawingsFlags.Present">
+            <summary>
+The present event
+</summary>
+        </member>
+        <member name="F:Entropy.DisabledDrawingsFlags.None">
+            <summary>
+None events will be disabled
+</summary>
+        </member>
+        <member name="T:Entropy.TurretRangeIndicatorFlags">
+            <summary>
+This enum contains the type of turret range indicators to be rendered
+</summary>
+        </member>
+        <member name="F:Entropy.TurretRangeIndicatorFlags.Enemy">
+            <summary>
+Enemy turret range indicators are rendered
+</summary>
+        </member>
+        <member name="F:Entropy.TurretRangeIndicatorFlags.Ally">
+            <summary>
+Ally turret range indicators are rendered
+</summary>
+        </member>
+        <member name="F:Entropy.TurretRangeIndicatorFlags.None">
+            <summary>
+None are rendered
+</summary>
+        </member>
+        <member name="T:Entropy.GameObjectTypeID">
+            <summary>
+This enum contains the types of GameObjects
+</summary>
+        </member>
+        <member name="F:Entropy.GameObjectTeam.Neutral">
+            <summary>
+The team is neutral
+</summary>
+        </member>
+        <member name="F:Entropy.GameObjectTeam.Chaos">
+            <summary>
+The team is chaos (red)
+</summary>
+        </member>
+        <member name="F:Entropy.GameObjectTeam.Order">
+            <summary>
+The team is order (blue)
+</summary>
+        </member>
+        <member name="F:Entropy.GameObjectTeam.Unknown">
+            <summary>
+The team is unknown
+</summary>
+        </member>
+        <member name="T:Entropy.GameEvent">
+            <summary>
+This enum identifies the type of event that is being fired
+</summary>
+        </member>
+        <member name="T:Entropy.GameMap">
+            <summary>
+This enum identifies the game map
+</summary>
+        </member>
+        <member name="T:Entropy.GameState">
+            <summary>
+This enum identifies the state of the game
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.Unknown">
+            <summary>
+The game state is unknown
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.Exiting">
+            <summary>
+The game is exiting
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.PreExiting">
+            <summary>
+The game is pre-exiting
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.Finished">
+            <summary>
+The game is finished
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.Reconnecting">
+            <summary>
+The game is reconnecting
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.Running">
+            <summary>
+The game is running
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.Spawning">
+            <summary>
+The game is spawning entities
+</summary>
+        </member>
+        <member name="F:Entropy.GameState.Connecting">
+            <summary>
+The game is connecting
+</summary>
+        </member>
+        <member name="T:Entropy.BuffType">
+            <summary>
+This enum indicates the type of the target buff
+</summary>
+        </member>
+    </members>
+</doc>
